@@ -1,0 +1,9 @@
+{
+  "name": "learning-node-js-2-simple-web-file-server",
+  "version": "0.0.0",
+  "description": "Learning Node JS 2 Simple Web File Server",
+  "main": "app.js",
+  "author": {
+    "name": "Cloudworks"
+  }
+}
