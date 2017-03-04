@@ -25,7 +25,12 @@ function onRequest(request, response) {
         fs.createReadStream("./index.html").pipe(response); //Read to stream
        
     }
-  
+  else if(request.method == "GET" && request.url == "/picture=cat")
+  {
+          response.writeHead(200, { "Content-Type": "text/html" }); //Change Content-Type or Context-Type to html to send html
+          response.write("<img src='https://s-media-cache-ak0.pinimg.com/736x/07/c3/45/07c345d0eca11d0bc97c894751ba1b46.jpg'/>");
+          response.end();
+  }
     else
     {
         send404response(response);
