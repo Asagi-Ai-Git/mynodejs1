@@ -32,7 +32,7 @@ function onRequest(request, response) {
     }
 }
 
-http.createServer(onRequest).listen(8888);
+http.createServer(onRequest).listen(process.env.PORT || 8888);
 
 //Server status log
 console.log("Server is running...");
