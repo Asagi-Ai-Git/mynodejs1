@@ -26,13 +26,7 @@ function onRequest(request, response) {
        
     }
 
-    else if(request.method == "GET" && request.url == "/commit")
-    {
-  	response.writeHead(200,{"Content-Type":"text/plain"});
-	response.write(process.env.TEXT);
-	response.end();
-    }
-  else if(request.method == "GET" && request.url == "/picture=cat")
+ else if(request.method == "GET" && request.url == "/picture=cat")
   {
           response.writeHead(200, { "Content-Type": "text/html" }); //Change Content-Type or Context-Type to html to send html
           response.write("<img src='https://s-media-cache-ak0.pinimg.com/736x/07/c3/45/07c345d0eca11d0bc97c894751ba1b46.jpg'/>");
