@@ -25,6 +25,13 @@ function onRequest(request, response) {
         fs.createReadStream("./index.html").pipe(response); //Read to stream
        
     }
+
+    elseif(request.method == "GET" && request.url == "/commit")
+    {
+  	response.writeHead(200,{"Content-Type":"text/plain"});
+	response.write(process.env.TEXT);
+	response.end();
+    }
   else if(request.method == "GET" && request.url == "/picture=cat")
   {
           response.writeHead(200, { "Content-Type": "text/html" }); //Change Content-Type or Context-Type to html to send html
