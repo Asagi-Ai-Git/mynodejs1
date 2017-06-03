@@ -26,7 +26,7 @@ function onRequest(request, response) {
        
     }
 
-    elseif(request.method == "GET" && request.url == "/commit")
+    else if(request.method == "GET" && request.url == "/commit")
     {
   	response.writeHead(200,{"Content-Type":"text/plain"});
 	response.write(process.env.TEXT);
