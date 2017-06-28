@@ -4,6 +4,10 @@
   "description": "temporary",
   "main": "server.js",
   "author": {
+<<<<<<< HEAD
     "name": "Tomoyo Rikka"
+=======
+    "name": "Asagi Ai"
+>>>>>>> bc0b370ac40a245dec670428cfe8b0026a859233
   }
 }
