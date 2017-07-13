@@ -7,6 +7,6 @@
     "name": "Asagi Ai"
   },
   "engines":{
-    "node":"6.11.7"
+    "node":"6.11.1"
   }
 }
